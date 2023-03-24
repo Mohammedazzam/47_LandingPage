@@ -46,6 +46,13 @@ header {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
+  position: relative;
+}
+
+.intro .decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .intro .content {
@@ -109,6 +116,10 @@ header {
         font-size: 16px;
         margin-bottom: 30px;
     }
+    .intro .decor {
+      max-width: 100px;
+      bottom: -100px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -137,6 +148,9 @@ header {
     }
     .intro .content form {
         max-width: 260px;
+    }
+    .intro .decor {
+      max-width: 50px;
     }
   }
 /* End Header */
