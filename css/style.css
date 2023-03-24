@@ -5,3 +5,138 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+:root {
+  --color01: #112d58;
+  --color02: #ffa024;
+}
+/* Start Header */
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.sign-in {
+  background-image: linear-gradient(#2963bb, #18386b);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.intro {
+  background-image: url(../images/header.png);
+  min-height: 970px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+.intro .content {
+  margin-top: 233px;
+}
+
+.intro .content h4 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--color01);
+}
+
+.intro .content p {
+  opacity: 0.5;
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+
+.intro .content form {
+  position: relative;
+}
+.intro .content form input[type="text"] {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: 6px 0 34px #d3d4d46b;
+}
+
+.intro .content form button {
+  position: absolute;
+  top: 4px;
+  right: 9px;
+  background: var(--color02);
+  color: #fff;
+  border: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 20px;
+}
+
+@media(max-width:992px) {
+    .intro {
+        height: 620px;
+    }
+    .intro .content h4 {
+        font-size: 34px;
+    }
+    .intro .content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1400px) {
+  .intro {
+    height: 1200px;
+  }
+  .intro .content {
+    margin-top: 313px;
+  }
+}
+@media (max-width: 992px) {
+    .navbar ul {
+      background-color: var(--color01);
+    }
+  }
+
+  @media(max-width:768px) {
+    .intro {
+        height: 490px;
+    }
+    .intro .content h4 {
+        font-size: 25px;
+    }
+    .intro .content p {
+        font-size: 12px;
+    }
+    .intro .content form {
+        max-width: 260px;
+    }
+  }
+/* End Header */
