@@ -391,3 +391,56 @@ header {
   max-width: 100%;
 }
 /* End Section02 */
+
+/* Start join-us */
+.join-us {
+  position: relative;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+
+.join-us::before {
+  content: '';
+  background-image: url(../images/Group8.png);
+  position: absolute;
+  left: -60px;
+  top: 110px;
+  width: 110%;
+  height: 250px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.join-us img {
+  margin-bottom: 40px;
+  max-width: 630px;
+  position: relative;
+  animation-name: top-to-down;
+  animation-duration: 4s;
+  animation-iteration-count:infinite ;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .join-us img {
+    max-width: 330px;
+  }
+  .join-us::before {
+    top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .join-us img {
+    max-width: 100%;
+  }
+  .join-us::before {
+    right: 0;
+    left: 0;
+  }
+}
+/* End join-us */
