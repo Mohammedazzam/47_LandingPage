@@ -384,3 +384,10 @@ header {
   }
 }
 /* End Category */
+
+
+/* Start Section02 */
+.section-02 figure img {
+  max-width: 100%;
+}
+/* End Section02 */
